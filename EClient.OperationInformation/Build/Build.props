@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<AssemblyOriginatorKeyFile>$(SolutionDir)Signing\StrongName.snk</AssemblyOriginatorKeyFile>
+		<AssemblyOriginatorKeyFile Condition="!Exists('$(AssemblyOriginatorKeyFile)')">$(SolutionDir)Signing\StrongName.Development.snk</AssemblyOriginatorKeyFile>
+		<!-- High, Low or Normal -->
+		<MessageImportance Condition="$(MessageImportance) == ''">High</MessageImportance>
+		<!-- Normal, Quiet or Detailed -->
+		<NuGetVerbosity Condition="$(NuGetVerbosity) == ''">Normal</NuGetVerbosity>
+		<SignAssembly>true</SignAssembly>
+	</PropertyGroup>
+</Project>

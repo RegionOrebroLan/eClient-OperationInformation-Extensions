@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5FAA7873-2D93-449F-B868-01B7889755E0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{40AD361F-14AF-42EE-A3DF-F7D42FB923BE}"
+	ProjectSection(SolutionItems) = preProject
+		CodeAnalysis\Solution.ruleset = CodeAnalysis\Solution.ruleset
+		CodeAnalysis\Solution.Tests.ruleset = CodeAnalysis\Solution.Tests.ruleset
+		CodeAnalysis\SolutionDictionary.xml = CodeAnalysis\SolutionDictionary.xml
+		CodeAnalysis\SolutionSuppressions.cs = CodeAnalysis\SolutionSuppressions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{103BE0B0-66F6-4E8F-B79F-5B3927F6FB42}"
+	ProjectSection(SolutionItems) = preProject
+		Properties\Solution-AssemblyInfo.cs = Properties\Solution-AssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClient.OperationInformation", "EClient.OperationInformation\EClient.OperationInformation.csproj", "{259D544D-052E-49AA-8F78-E473035CC8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClient.OperationInformation.IntegrationTests", "EClient.OperationInformation.IntegrationTests\EClient.OperationInformation.IntegrationTests.csproj", "{75714E25-17F8-470F-B19D-0733DCD27F13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClient.OperationInformation.ShimTests", "EClient.OperationInformation.ShimTests\EClient.OperationInformation.ShimTests.csproj", "{C23D5790-7462-483C-930A-6548CFB0B370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EClient.OperationInformation.UnitTests", "EClient.OperationInformation.UnitTests\EClient.OperationInformation.UnitTests.csproj", "{BEB9CECF-6D46-4C37-8184-D970D7A2F9EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Signing", "Signing", "{E0C9B7F1-BDFB-4873-9327-59B249B4A567}"
+	ProjectSection(SolutionItems) = preProject
+		Signing\StrongName.Development.snk = Signing\StrongName.Development.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{96EC11A3-842A-4427-845F-0B748F777BC1}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{259D544D-052E-49AA-8F78-E473035CC8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259D544D-052E-49AA-8F78-E473035CC8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259D544D-052E-49AA-8F78-E473035CC8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259D544D-052E-49AA-8F78-E473035CC8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75714E25-17F8-470F-B19D-0733DCD27F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75714E25-17F8-470F-B19D-0733DCD27F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75714E25-17F8-470F-B19D-0733DCD27F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75714E25-17F8-470F-B19D-0733DCD27F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23D5790-7462-483C-930A-6548CFB0B370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23D5790-7462-483C-930A-6548CFB0B370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23D5790-7462-483C-930A-6548CFB0B370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23D5790-7462-483C-930A-6548CFB0B370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB9CECF-6D46-4C37-8184-D970D7A2F9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB9CECF-6D46-4C37-8184-D970D7A2F9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB9CECF-6D46-4C37-8184-D970D7A2F9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB9CECF-6D46-4C37-8184-D970D7A2F9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
